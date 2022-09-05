@@ -28,49 +28,49 @@ function startGameplay() {
 		let You = getUserInput();
 		let Computer = getComputerChoice();
 		if (You === Computer) {
-			console.log(`\nThe Computer chose ${Computer.toUpperCase()}`);
-			console.log("\nIt is a tie!");
-			console.log(`Computer: ${compCount}`);
-			console.log(`You: ${youCount}\n`);
+			console.log(`\n\tThe Computer chose ${Computer.toUpperCase()}`);
+			console.log("\n\tIt is a tie!");
+			console.log(`\tComputer: ${compCount}`);
+			console.log(`\tYou: ${youCount}\n`);
 		} else {
 			if (You == "rock" && Computer == "paper") {
-				console.log(`\nThe Computer chose ${Computer.toUpperCase()}`);
-				console.log("\nYou lose! Paper beats Rock.");
-				console.log(`Computer: ${compCount+=1}`);
-				console.log(`You: ${youCount}\n`);
+				console.log(`\n\tThe Computer chose ${Computer.toUpperCase()}`);
+				console.log("\n\tYou lose! Paper beats Rock.");
+				console.log(`\tComputer: ${compCount+=1}`);
+				console.log(`\tYou: ${youCount}\n`);
 			} else if (You == "paper" && Computer == "rock") {
-				console.log(`\nThe Computer chose ${Computer.toUpperCase()}`);
-				console.log("\nYou win! Paper beats Rock.");
-				console.log(`Computer: ${compCount}`);
-				console.log(`You: ${youCount+=1}\n`);
+				console.log(`\n\tThe Computer chose ${Computer.toUpperCase()}`);
+				console.log("\n\tYou win! Paper beats Rock.");
+				console.log(`\tComputer: ${compCount}`);
+				console.log(`\tYou: ${youCount+=1}\n`);
 			}
 			if (You == "paper" && Computer == "scissors") {
-				console.log(`\nThe Computer chose ${Computer.toUpperCase()}`);
-				console.log("\nYou lose! Scissors beat Paper.");
-				console.log(`Computer: ${compCount+=1}`);
-				console.log(`You: ${youCount}\n`);
+				console.log(`\n\tThe Computer chose ${Computer.toUpperCase()}`);
+				console.log("\n\tYou lose! Scissors beat Paper.");
+				console.log(`\tComputer: ${compCount+=1}`);
+				console.log(`\tYou: ${youCount}\n`);
 			} else if (You == "scissors" && Computer == "paper") {
-				console.log(`\nThe Computer chose ${Computer.toUpperCase()}`);
-				console.log("\nYou win! Scissors beat Paper.");
-				console.log(`Computer: ${compCount}`);
-				console.log(`You: ${youCount+=1}\n`);
+				console.log(`\n\tThe Computer chose ${Computer.toUpperCase()}`);
+				console.log("\n\tYou win! Scissors beat Paper.");
+				console.log(`\tComputer: ${compCount}`);
+				console.log(`\tYou: ${youCount+=1}\n`);
 			}
 			if (You == "scissors" && Computer == "rock") {
-				console.log(`\nThe Computer chose ${Computer.toUpperCase()}`);
-				console.log("\nYou lose! Rock beats Scissors.");
-				console.log(`Computer: ${compCount+=1}`);
-				console.log(`You: ${youCount}\n`);
+				console.log(`\n\tThe Computer chose ${Computer.toUpperCase()}`);
+				console.log("\n\tYou lose! Rock beats Scissors.");
+				console.log(`\tComputer: ${compCount+=1}`);
+				console.log(`\tYou: ${youCount}\n`);
 			} else if (You == "rock" && Computer == "scissors") {
-				console.log(`\nThe Computer chose ${Computer.toUpperCase()}`);
-				console.log("\nYou win! Rock beats Scissors.");
-				console.log(`Computer: ${compCount}`);
-				console.log(`You: ${youCount+=1}\n`);
+				console.log(`\n\tThe Computer chose ${Computer.toUpperCase()}`);
+				console.log("\n\tYou win! Rock beats Scissors.");
+				console.log(`\tComputer: ${compCount}`);
+				console.log(`\tYou: ${youCount+=1}\n`);
 			}
 		}
 		if (compCount == 5) {
-		console.log("\nSorry! Computer is the Winner!!!\n");
+		console.log("\n\t\t ***** Sorry! Computer is the Winner!!! ***** \n");
 		} else if (youCount == 5) {
-		console.log("\nHurray! You are the Winner!\n");
+		console.log("\n\t\t ***** Hurray! You are the Winner! ***** \n");
 		}
 	}
 	
