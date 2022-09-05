@@ -12,12 +12,12 @@ function getComputerChoice() {
 const prompt = require("prompt-sync")({sigint:true});
 
 function getUserInput() {
-	let userChoice = prompt("Choose your weapon (Type in ROCK/PAPER/SCISSORS): ", '');
+	let userChoice = prompt("Choose your weapon (Type rock/paper/scissors): ", '');
 	let modUserChoice = userChoice.toLowerCase();
 	if (modUserChoice === list[0] || modUserChoice === list[1] || modUserChoice === list[2] ) {
 		return modUserChoice;	
 	} else {
-		console.log("Wrong Entry! Please try again.");
+		console.log("\nWrong Entry! Please try again.\n");
 	}
 }
 
@@ -28,45 +28,46 @@ function gameplay() {
 		let You = getUserInput();
 		let Computer = getComputerChoice();
 		if (You === Computer) {
-			console.log("It is a tie!");
+			console.log("\nIt is a tie!");
 			console.log(`Computer: ${compCount}`);
-			console.log(`You: ${youCount}`);
+			console.log(`You: ${youCount}\n`);
 		} else {
 			if (You == "rock" && Computer == "paper") {
-				console.log("You lose! Paper beats Rock.");
+				console.log("\nYou lose! Paper beats Rock.");
 				console.log(`Computer: ${compCount+=1}`);
-				console.log(`You: ${youCount}`);
+				console.log(`You: ${youCount}\n`);
 			} else if (You == "paper" && Computer == "rock") {
-				console.log("You win! Paper beats Rock.");
+				console.log("\nYou win! Paper beats Rock.");
 				console.log(`Computer: ${compCount}`);
-				console.log(`You: ${youCount+=1}`);
+				console.log(`You: ${youCount+=1}\n`);
 			}
 			if (You == "paper" && Computer == "scissors") {
-				console.log("You lose! Scissors beat Paper.");
+				console.log("\nYou lose! Scissors beat Paper.");
 				console.log(`Computer: ${compCount+=1}`);
-				console.log(`You: ${youCount}`);
+				console.log(`You: ${youCount}\n`);
 			} else if (You == "scissors" && Computer == "paper") {
 				console.log("You win! Scissors beat Paper.");
 				console.log(`Computer: ${compCount}`);
-				console.log(`You: ${youCount+=1}`);
+				console.log(`You: ${youCount+=1}\n`);
 			}
 			if (You == "scissors" && Computer == "rock") {
-				console.log("You lose! Rock beats Scissors.");
+				console.log("\nYou lose! Rock beats Scissors.");
 				console.log(`Computer: ${compCount+=1}`);
-				console.log(`You: ${youCount}`);
+				console.log(`You: ${youCount}\n`);
 			} else if (You == "rock" && Computer == "scissors") {
-				console.log("You win! Rock beats Scissors.");
+				console.log("\nYou win! Rock beats Scissors.");
 				console.log(`Computer: ${compCount}`);
-				console.log(`You: ${youCount+=1}`);
+				console.log(`You: ${youCount+=1}\n`);
 			}
 		}
 		if (compCount == 5) {
-		console.log("Sorry! Computer is the Winner!!!");
+		console.log("\nSorry! Computer is the Winner!!!\n");
 		} else if (youCount == 5) {
-		console.log("Hurray! You are the Winner!");
+		console.log("\nHurray! You are the Winner!\n");
 		}
 	}
 	
 }
 
+console.log("\n******************** ROCK PAPER SCISSORS ********************\n")
 gameplay();
