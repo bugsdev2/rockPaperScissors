@@ -23,7 +23,7 @@ function getUserInput() {
 
 //~ Create a function that compares the user's result with the computer's result and prints out who won. 
 
-function gameplay() {
+function startGameplay() {
 	for(let compCount = 0, youCount = 0; compCount < 5 && youCount < 5 ;) {
 		let You = getUserInput();
 		let Computer = getComputerChoice();
@@ -70,4 +70,4 @@ function gameplay() {
 }
 
 console.log("\n******************** ROCK PAPER SCISSORS ********************\n")
-gameplay();
+startGameplay();
