@@ -17,7 +17,7 @@ function getUserInput() {
 	if (modUserChoice === list[0] || modUserChoice === list[1] || modUserChoice === list[2] ) {
 		return modUserChoice;	
 	} else {
-		console.log("\nWrong Entry! Please try again.\n");
+		console.log("\nNo such weapon in the suitcase!\n");
 	}
 }
 
