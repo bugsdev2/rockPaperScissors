@@ -1,0 +1,52 @@
+body {
+	background: rgba(0,0,0,10);
+}
+
+.wrapper {
+	background:pink;
+	padding: 3rem;
+	display: grid;
+	place-items: center;
+	height: 90vh;
+}
+
+.game-container {
+	display: flex;
+	flex-flow: column;
+}
+
+.play-window {
+	display: flex;
+	gap: 8rem;
+}
+
+.play-window p {
+	text-align:center;
+}
+
+.play-area {
+	width: 210px;
+	height: 210px;
+	background: black;
+	display: grid;
+	place-items: center;
+}
+
+.play {
+	width: 200px;
+	height: 200px;
+	background: white;
+}
+
+.option-window {
+	margin-top: 2rem;
+	display: flex;
+	justify-content: center;
+	gap:1rem;
+}
+
+.option-window img {
+	height: 60px;
+}
+
+
