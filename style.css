@@ -15,9 +15,14 @@ body {
 	flex-flow: column;
 }
 
+.game-container h1 {
+	text-align: center;
+}
+
 .play-window {
 	display: flex;
 	gap: 8rem;
+	align-items: center;
 }
 
 .play-window p {
@@ -38,6 +43,10 @@ body {
 	background: white;
 }
 
+.play-area img {
+	width: 200px;
+}
+
 .option-window {
 	margin-top: 2rem;
 	display: flex;
@@ -49,4 +58,20 @@ body {
 	height: 60px;
 }
 
+table, td, tr {
+	border: 1px solid black;
+}
+
+td, tr {
+	text-align:center;
+	width: 100px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table tr:first-child {
+	font-weight: bold;
+}
 
