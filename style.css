@@ -3,7 +3,7 @@ body {
 }
 
 .wrapper {
-	background:pink;
+	background:#D9C7C8;
 	padding: 1rem;
 	display: grid;
 	place-items: center;
