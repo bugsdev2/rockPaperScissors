@@ -18,6 +18,7 @@ const h3 = document.querySelector('.table h3');
 options.forEach(option => option.addEventListener('click', startGameplay))
 
 function startGameplay(e) {
+	e.target.classList.add('clicked');
 	if (youCount == 5 || compCount == 5) {
 		if (confirm('Do you want to start a new game?')) {
 			youCount=0; 
@@ -94,7 +95,10 @@ function startGameplay(e) {
 				alert('Sorry! You have lost this game');
 			}
 	}
-	
+	options.forEach(option => option.addEventListener('transitionend', removeClickedClass));
+	function removeClickedClass () {
+		this.classList.remove('clicked');
+	}
 }
 
 

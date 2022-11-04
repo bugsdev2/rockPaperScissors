@@ -56,6 +56,7 @@ body {
 
 .option-window img {
 	height: 60px;
+	transition: all 0.07s;
 }
 
 table, td, tr {
@@ -78,4 +79,8 @@ table tr:first-child {
 
 .table h3 {
 	text-align:center;
+}
+
+img.clicked {
+	transform: scale(1.1);
 }
