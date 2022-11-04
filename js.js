@@ -47,39 +47,39 @@ function startGameplay(e) {
 				h3.textContent = "It's a tie!";
 			} else {
 				if (userChoice == "rock" && computerChoice == "paper") {
-					h3.textContent = "You lose!";
+					h3.innerHTML = "Paper beats Rock.<br>You lose!";
 					loser = userChoice;
 					imgCross.setAttribute('src', `assets/images/${loser}Cross.png`);
 					userPlayArea.replaceChild(imgCross, userPlayArea.firstElementChild);
 					compCount+=1;
 				} else if (userChoice == "paper" && computerChoice == "rock") {
-					h3.textContent = "You win!";
+					h3.innerHTML = "Paper beats Rock.<br>You win!";
 					loser = computerChoice;
 					imgCross.setAttribute('src', `assets/images/${loser}Cross.png`);
 					compPlayArea.replaceChild(imgCross, compPlayArea.firstElementChild);
 					youCount+=1;
 				}
 				if (userChoice == "paper" && computerChoice == "scissors") {
-					h3.textContent = "You lose!";
+					h3.innerHTML = "Scissors beats Paper.<br>You lose!";
 					loser = userChoice;
 					imgCross.setAttribute('src', `assets/images/${loser}Cross.png`);
 					userPlayArea.replaceChild(imgCross, userPlayArea.firstElementChild);
 					compCount+=1;
 				} else if (userChoice == "scissors" && computerChoice == "paper") {
-					h3.textContent = "You win!";
+					h3.innerHTML = "Scissors beats Paper.<br>You win!";
 					loser = computerChoice;
 					imgCross.setAttribute('src', `assets/images/${loser}Cross.png`);
 					compPlayArea.replaceChild(imgCross, compPlayArea.firstElementChild);
 					youCount+=1;
 				}
 				if (userChoice == "scissors" && computerChoice == "rock") {
-					h3.textContent = "You lose!";
+					h3.innerHTML = "Rock beats Scissors.<br>You lose!";
 					loser = userChoice;
 					imgCross.setAttribute('src', `assets/images/${loser}Cross.png`);
 					userPlayArea.replaceChild(imgCross, userPlayArea.firstElementChild);
 					compCount+=1;
 				} else if (userChoice == "rock" && computerChoice == "scissors") {
-					h3.textContent = "You win!";
+					h3.innerHTML = "Rock beats Scissors.<br>You win!";
 					loser = computerChoice;
 					imgCross.setAttribute('src', `assets/images/${loser}Cross.png`);
 					compPlayArea.replaceChild(imgCross, compPlayArea.firstElementChild);
@@ -88,6 +88,11 @@ function startGameplay(e) {
 			}
 			userTableData.textContent = youCount;
 			compTableData.textContent = compCount;
+			if (youCount == 5) {
+				alert('Congrats! You have won the game.');
+			} else if (compCount == 5) {
+				alert('Sorry! You have lost this game');
+			}
 	}
 	
 }
